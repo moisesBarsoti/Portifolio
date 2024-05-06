@@ -336,3 +336,92 @@ h3#text-animation span::after {
         width: calc(100% + 8px);
     }
 }
+
+
+/* Section de Formação */
+
+section#formacao h2#heading {
+    font-size: 8rem;
+    text-align: center;
+    margin: 5rem 0;
+}
+
+
+section#formacao {
+    padding: 100px 15px;
+    background: var(--second-bg-color);
+}
+
+
+section#formacao h2 {
+    margin-bottom: 5rem;
+}
+
+
+div#timeline-items {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+
+div#timeline-items::before {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 100%;
+    background-color: var(--main-color);
+    left: calc(50% - 1px);
+}
+
+
+section#formacao div.timeline-item {
+    margin-bottom: 40px;
+    width: 100%;
+    position: relative;
+}
+
+
+div.timeline-item:last-child {
+    margin-bottom: 0;
+}
+
+
+div.timeline-item:nth-child(odd) {
+    padding-right: calc(50% + 30px);
+    text-align: right;
+}
+
+
+div.timeline-item:nth-child(even) {
+    padding-left: calc(50% + 30px);
+} 
+
+
+section#formacao div.timeline-dot {
+    height: 21px;
+    width: 21px;
+    background-color: var(--main-color);
+    box-shadow: 0 0 25px var(--main-color),
+                0 0 50px var(--main-color);
+    position: absolute;
+    left: calc(50% - 8px);
+    border-radius: 50%;
+    top: 10px;
+}
+
+
+section#formacao div.timeline-date {
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    margin: 6px 0 15px;
+}
+
+
+section#formacao div.timeline-content {
+    background-color: var(--bg-color);
+    border: solid 3px var(--main-color);
+}
