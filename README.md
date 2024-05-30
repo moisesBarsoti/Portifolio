@@ -1,4 +1,4 @@
-![image](https://github.com/moisesBarsoti/Portifolio/assets/146322015/fac5ddcc-fc64-411c-8cc9-8ea28fcb4cad)
+![image](https://github.com/moisesBarsoti/Portifolio/assets/146322015/bd8134cd-2b95-4417-89c5-5f0f1fe1c0c8)
 
 
 link do Portifólio:  https://moisesbarsoti.github.io/Portifolio/
