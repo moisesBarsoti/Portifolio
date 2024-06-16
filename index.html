@@ -1,131 +1,80 @@
+<!DOCTYPE html>
 <html lang="pt-br">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Seja bem vindo ao Potifólio do Moisés Barsoti"
-    />
-    <title>Potifólio do Moisés Barsoti</title>
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <!-- Este link é para os icons -->
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <!-- Link das fontes das letras -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <header id="header">
-      <a href="#inicio" id="logo"> Moisés <span>Barsoti</span> </a>
-      <i class="bx bx-menu" id="menu-icon"></i>
-      <nav id="navBar">
-        <a href="#inicio" id="ativo">Início</a>
-        <a href="#experiencia">Experiências</a>
-        <a href="#projetos">Projetos</a> <a href="contato">Contato</a>
-      </nav>
+    <title>Portifólio</title>
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <!-- Link das fontes -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet" />
+    <!-- Link dos ícones -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div id="apresentacao">
+        <h1>Seja Bem Vindo ao Meu Portifólio</h1>
+    </div>
+
+    <header>
+        <h2 id="logo">
+            <a href="#inicio">
+                Moisés
+                <span> Barsoti </span>
+            </a>
+        </h2>
+        <nav id="links">
+            <a href="#inicio" title="Ir para o início" class="ativo"> Início </a>
+            <a href="#projetos" title="Ir para os Projetos"> Projetos </a>
+            <a href="#contatos" title="Ir para os Contatos"> Contatos </a>
+        </nav>
     </header>
+
     <section id="inicio">
-      <div id="inicio-conteudo">
-        <h1>Olá, bem vindo ao meu Portifólio</h1>
-        <h3 id="text-animation">Eu sou <span></span></h3>
-        <p>
-          Olá, tudo bem ?... Eu me chamo Moisés Barsoti, nascido em São Paulo no
-          dia 03/07/2005, estudo na Proz Educação e trabalho na Atento como
-          analista e suporte de sistemas, pretendo continuar me aperfeiçoando
-          para me tornar o melhor programador!
-        </p>
-        <div id="icons-social">
-          <a href="https://www.linkedin.com/in/mois%C3%A9s-barsoti-468869278"
-            ><i class="bx bxl-linkedin"></i
-          ></a>
-          <a href="https://github.com/moisesBarsoti"
-            ><i class="bx bxl-github"></i
-          ></a>
-          <a
-            href="https://www.instagram.com/moises_barsoti?igsh=Nmhxb245dXVnaTdn"
-            ><i class="bx bxl-instagram-alt"></i
-          ></a>
+        <div id="conteudo-container">
+            <div id="conteudo">
+                <h3>Olá, Eu sou <span>Moisés</span></h3>
+                <h4>Eu sou <span></span></h4>
+                <div id="redes-sociais">
+                    <a href="https://www.linkedin.com/in/mois%C3%A9s-barsoti-468869278" title="Ir para o Linkedin">
+                        <i class="bx bxl-linkedin"></i>
+                    </a>
+                    <a href="https://www.instagram.com/moises_barsoti?igsh=Nmhxb245dXVnaTdn" title="Ir para o Intagram">
+                        <i class="bx bxl-instagram"></i>
+                    </a>
+                    <a href="https://github.com/moisesBarsoti" title="Ir para o Github">
+                        <i class="bx bxl-github"></i>
+                    </a>
+                </div>
+                <div id="sobreMim">
+                    <h4>Sobre Mim</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Labore iste soluta vitae inventore rerum doloremque ipsam 
+                        totam in natus quas, sunt, voluptatum aspernatur nesciunt facilis commodi. 
+                        Vitae neque illum id.
+                    </p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Labore iste soluta vitae inventore rerum doloremque ipsam 
+                        totam in natus quas, sunt, voluptatum aspernatur nesciunt facilis commodi. 
+                        Vitae neque illum id.
+                    </p>
+                    <div id="cv-meusLinks">
+                        <a href="Moisés Barsoti Andrade de OLiveira.pdf" title="Ir Para o curriculo">CV</a>
+                        <a href="https://moisesbarsoti.github.io/MeusLinks/" title="Ver página de Links">Meus Links</a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div id="btn-group">
-          <a href="#" class="btn">Meus Links</a>
-          <a
-            href="Moisés Barsoti Andrade de OLiveira.pdf"
-            target="_blank"
-            class="btn"
-            >CV</a
-          >
-        </div>
-      </div>
     </section>
-    <!-- Section de Experiência -->
-    <section id="experiencia">
-      <div id="container-experiencia">
-        <img
-          src="https://github.com/moisesBarsoti.png"
-          alt="Aqui tem uma fotografia de Moisés com uma blusa azul e com o ceu nublado"
-          loading="lazy"
-        />
-        <div id="texto">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic
-            officia ipsa quisquam dolor provident obcaecati illum! Iste quam,
-            magnam quis voluptatibus, fugiat impedit animi ratione aliquid ab,
-            omnis qui nam.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic
-            officia ipsa quisquam dolor provident obcaecati illum! Iste quam,
-            magnam quis voluptatibus, fugiat impedit animi ratione aliquid ab,
-            omnis qui nam.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic
-            officia ipsa quisquam dolor provident obcaecati illum! Iste quam,
-            magnam quis voluptatibus, fugiat impedit animi ratione aliquid ab,
-            omnis qui nam.
-          </p>
-        </div>
-        <div id="linguagens">
-          <img
-            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg"
-            alt="Aqui tem uma imagem da logo HTML"
-            loading="lazy"
-          />
-          <p>Html</p>
-          <img
-            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg"
-            alt="Aqui tem uma imagem da logo CSS"
-            loading="lazy"
-          />
-          <p>CSS</p>
-          <img
-            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg"
-            alt="Aqui tem uma imagem da logo Javascript"
-            loading="lazy"
-          />
-          <p>Javascript</p>
-          <img
-            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-plain.svg"
-            alt="Aqui tem uma imagem da logo PHP"
-            loading="lazy"
-          />
-          <p>PHP</p>
-          <img
-            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-plain.svg"
-            alt="Aqui tem uma imagem da logo Java"
-            loading="lazy"
-          />
-          <p>Java</p>
-        </div>
-      </div>
-    </section>
-    <script src="assets/js/script.js"></script>
-  </body>
+
+    <section id="projetos"></section>
+
+    <section id="contatos"></section>
+</body>
+
 </html>
