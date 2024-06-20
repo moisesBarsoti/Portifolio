@@ -2,7 +2,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     outline: none;
     text-decoration: none;
     list-style: none;
@@ -17,7 +17,7 @@ html {
     --bg-color: #080808;
     --white: #fff;
     --orange: #ee714b;
-    --transparente-100: rgba(255, 255, 255, 0.1)
+    --transparente-100: rgba(255, 255, 255, 0.1);
 }
 
 body {
@@ -26,7 +26,6 @@ body {
 }
 
 /* Abertura de apresentação */
-
 div#apresentacao {
     position: absolute;
     background: var(--bg-color);
@@ -97,9 +96,9 @@ section {
     padding: 10.5rem 12% 10.5rem;
 }
 
-/* Section Inicio */
+/* Section Inicio */ 
 
-/* Conteudo */
+/* Conteudo */ 
 
 section#inicio div#conteudo-container div#conteudo {
     display: flex;
@@ -124,7 +123,7 @@ section#inicio div#conteudo-container div#conteudo h4 span {
     position: relative;
 }
 
-/* Redes sociais / ícones */
+/* Redes sociais / ícones */ 
 
 section#inicio div#conteudo-container div#conteudo div#redes-sociais {
     display: flex;
@@ -142,7 +141,7 @@ section#inicio div#conteudo-container div#conteudo div#redes-sociais a i:hover {
     color: var(--white);
 }
 
-/* Sobre mim */
+/* Sobre mim */ 
 
 div#sobreMim {
     display: flex;
@@ -186,7 +185,7 @@ section#inicio div#conteudo-container div#sobreMim div#cv-meusLinks a:hover {
     color: var(--white);
 }
 
-/* Linguagens */
+/* Linguagens */ 
 
 div#linguagens div#containerLinguagens {
     display: flex;
@@ -198,7 +197,6 @@ div#linguagens div#containerLinguagens div.imgLinguagens img {
     margin: 2rem 3rem;
     height: 50px;
     cursor: pointer;
-
     transition: .5s;
 }
 
@@ -206,7 +204,7 @@ div#linguagens div#containerLinguagens div.imgLinguagens img:hover {
     transform: scale(1.5);
 }
 
-/* Section de Projetos */
+/* Section de Projetos */ 
 
 section#projetos {
     margin: -14rem 0;
@@ -251,7 +249,7 @@ section#projetos div#container-projetos div.projetos p {
     flex-wrap: wrap;
 }
 
-/* Links de acesso dos projetos */
+/* Links de acesso dos projetos */ 
 
 section#projetos div#container-projetos div.projetos div#linksDeAcesso {
     display: flex;
@@ -273,7 +271,95 @@ section#projetos div#container-projetos div.projetos div#linksDeAcesso a:hover {
     color: var(--white);
 }
 
-/* Animações */
+/* Section de Contatos */ 
+
+section#contatos h4 {
+    border-left: solid 2px var(--orange);
+    color: var(--orange);
+    padding-left: 1rem;
+    font-size: 2rem;
+    margin: 4rem 0 0rem;
+}
+
+section#contatos div#container-contatos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin: 10rem 0;
+}
+
+section#contatos div#container-contatos div#email {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+section#contatos div#container-contatos div#email input {
+    width: 20rem;
+    height: 3rem;
+    background: none;
+    border: solid 2px var(--orange);
+    border-radius: 8px;
+    color: var(--white);
+    padding: 0 0.8rem;
+    font-size: 1rem;
+}
+
+section#contatos div#container-contatos div#mensagem textarea {
+    width: 30rem;
+    height: 15rem;
+    padding: 1rem 1rem;
+    border: solid 2px var(--orange);
+    border-radius: 10px;
+    background: none;
+    color: var(--white);
+    font-size: 1rem;
+    resize: none;
+}
+
+section#contatos div#container-contatos div#mensagem div#enviar {
+    position: absolute;
+    margin: 3rem 11.5rem;
+}
+
+section#contatos div#container-contatos div#enviar button {
+    color: var(--orange);
+    padding: 1rem 1.5rem;
+    border: solid 2px var(--orange);
+    border-radius: 10px;
+    transition: .5s;
+    background: none;
+    cursor: pointer;
+}
+
+section#contatos div#container-contatos div#enviar button:hover {
+    border: solid 2px var(--white);
+    color: var(--white);
+}
+
+::placeholder {
+    color: var(--white);
+}
+
+/* Footer */ 
+
+footer {
+    text-align: center;
+    font-size: 1rem;
+}
+
+footer span#criador a {
+    color: var(--orange);
+    transition: .5s;
+}
+
+footer span#criador a:hover {
+    border-bottom: solid 1px var(--orange);
+    color: var(--white);
+}
+
+/* Animações */ 
 
 @keyframes aparecer {
     0% {
@@ -334,7 +420,6 @@ div#apresentacao h1 {
 }
 
 @keyframes digitar {
-
     10%,
     15%,
     30%,
@@ -347,7 +432,6 @@ div#apresentacao h1 {
     95% {
         width: 0;
     }
-
     5%,
     20%,
     25%,
@@ -382,10 +466,9 @@ section#inicio div#conteudo-container div#conteudo h4 span::after {
     animation-delay: 2.5s;
 }
 
-/* Responsividade */
+/* Responsividade */ 
 
 @media (width < 60rem) {
-
     html {
         font-size: 70%;
     }
@@ -428,8 +511,8 @@ section#inicio div#conteudo-container div#conteudo h4 span::after {
         padding-right: 0;
     }
 
-    /* Linguagens */
-
+    /* Linguagens */ 
+    
     div#linguagens h4 {
         margin: 3.4rem 0;
     }
@@ -440,14 +523,14 @@ section#inicio div#conteudo-container div#conteudo h4 span::after {
         align-items: center;
         flex-direction: column;
     }
-    
+
     div#linguagens div#containerLinguagens div.imgLinguagens img {
         margin: 2rem 3rem;
         height: 30px;
     }
 
-    /* Section de Projetos */
-
+    /* Section de Projetos */ 
+    
     section#projetos div#container-projetos {
         display: flex;
         justify-content: center;
@@ -456,4 +539,31 @@ section#inicio div#conteudo-container div#conteudo h4 span::after {
         gap: 3rem;
     }
 
+    /* Section de Contato */ 
+    
+    section#contatos div#container-contatos {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 3rem;
+        margin: 10rem 0;
+    }
+
+    section#contatos div#container-contatos div#mensagem textarea {
+        width: 25rem;
+        height: 10rem;
+        padding: 1rem 1rem;
+        border: solid 2px var(--orange);
+        border-radius: 10px;
+        background: none;
+        color: var(--white);
+        font-size: 1rem;
+        resize: none;
+    }
+
+    section#contatos div#container-contatos div#mensagem div#enviar {
+        position: absolute;
+        margin: 3rem 9rem;
+    }
 }
