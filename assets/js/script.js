@@ -15,3 +15,24 @@ function instalarAplicativo(espacoDisponivel, conexaoInternet) {
 
 // Tamanho aproximado do aplicativo em MB
 const tamanhoDoAplicativo = 50;
+
+// Selecionando Elementos
+const sections = document.querySelectorAll('section');
+const navLinks = document.querySelectorAll('nav#links a');
+
+// Acionando Elementos
+window.onscroll = () => {
+    sections.forEach(sec => {
+        let top = window.scrollY;
+        let offset = sec.offsetTop - 150;
+        let heigth = sec.offsetHeight;
+        let id = sec.getAttribute('id');
+
+        if(top >= offset && top < offset + heigth) {
+            navLinks.forEach(links => {
+                links.classList.remove('ativo');
+                document.querySelector('header nav a[href*=' + id + ']').classList.add('ativo');
+            })
+        };
+    })
+}

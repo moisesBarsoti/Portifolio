@@ -332,6 +332,7 @@ section#contatos div#container-contatos div#enviar button {
     transition: .5s;
     background: none;
     cursor: pointer;
+    font-size: 1.1rem;
 }
 
 section#contatos div#container-contatos div#enviar button:hover {
