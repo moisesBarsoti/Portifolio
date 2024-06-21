@@ -63,3 +63,11 @@ div#container div#conteudo a:hover {
     color: var(--white);
     border: solid 1px var(--white);
 }
+
+/* Responsividade */
+
+@media (width < 60rem) {
+    html {
+        font-size: 70%;
+    }
+}
