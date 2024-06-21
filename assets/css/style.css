@@ -324,7 +324,7 @@ section#contatos div#container-contatos div#mensagem div#enviar {
     margin: 3rem 11.5rem;
 }
 
-section#contatos div#container-contatos div#enviar button {
+section#contatos div#container-contatos div#enviar a{
     color: var(--orange);
     padding: 1rem 1.5rem;
     border: solid 2px var(--orange);
@@ -334,7 +334,7 @@ section#contatos div#container-contatos div#enviar button {
     cursor: pointer;
 }
 
-section#contatos div#container-contatos div#enviar button:hover {
+section#contatos div#container-contatos div#enviar a:hover {
     border: solid 2px var(--white);
     color: var(--white);
 }
