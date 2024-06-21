@@ -26,6 +26,7 @@ body {
 }
 
 /* Abertura de apresentação */
+
 div#apresentacao {
     position: absolute;
     background: var(--bg-color);

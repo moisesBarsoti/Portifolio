@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
-    <meta charset="UTF-8" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Portifólio</title>
-    <link rel="stylesheet" href="assets/css/style.css" /> <!-- Link das fontes -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style.css" /> 
+    <!-- Link das fontes -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet"/>
     <!-- Link dos ícones -->
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
 </head>
@@ -101,9 +101,9 @@
         <div id="container-projetos">
             <div class="projetos"> 
                 <img
-                 src="https://github.com/moisesBarsoti/landingPage-Pizzaria/assets/146322015/d7c88c0d-3eb5-4464-bf7f-6d1312134437"
+                 src="./assets/img/imgPizza.png"
                  alt="Uma imagem de uma landing page que consiste com alguns botões e com um fundo de uma pizza"
-                loading="lazy">
+                 loading="lazy">
                 <h5>Landing Page de Pizzaria</h5>
                 <p> 
                   <strong> Descrição: </strong> 
@@ -121,16 +121,16 @@
 
     <section id="contatos">
         <h4>Entrar em Contato</h4>
-        <form action="https://formsubmit.co/moises.barsot2@gmail.com" method="POST">
+        <form action="https://api.staticforms.xyz/submit" method="POST">
             <div id="container-contatos">
                 <div id="email"> 
-                    <input type="text" required title="Coloque seu Nome" placeholder="Nome"> 
+                    <input type="text" required title="Coloque seu Nome" placeholder="Nome" name="name"> 
                     <input type="email" required title="Coloque seu email" placeholder="Email" name="email"> 
-                    <input type="text" name="_honey" style="display: none;"> 
-                    <input type="hidden" name="_captcha" value="false"> 
+                    <input type="hidden" name="accessKey" value="7b169fa6-4183-4f49-9c24-56cd9a8de88b">
+                    <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/agradecimento.html">
                 </div>
                 <div id="mensagem"> 
-                    <textarea name="message" id="" placeholder="Escreva sua mensagem..."></textarea>
+                    <textarea name="message" placeholder="Escreva sua mensagem..."></textarea>
                     <div id="enviar"> 
                         <button type="submit"> 
                             Enviar 
@@ -148,6 +148,8 @@
         </a> 
         </span> 
     </footer>
+
     <script src="assets/js/script.js"></script> 
+
 </body> 
 </html>
