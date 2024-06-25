@@ -10,6 +10,7 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 :root {
@@ -466,7 +467,7 @@ section#inicio div#conteudo-container div#conteudo h4 span::after {
     width: calc(100% + 8px);
     background: var(--bg-color);
     animation-delay: 2.5s;
-}
+}   
 
 /* Responsividade */ 
 
