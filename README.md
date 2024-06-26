@@ -1,6 +1,7 @@
 <h1 align="center"> Portifólio do Moisés Barsoti </h1>
 
-![image](https://github.com/moisesBarsoti/Portifolio/assets/146322015/c7c3c9c1-ceb3-40d5-b5f6-d7b9f558d585)
+![image](https://github.com/moisesBarsoti/Portifolio/assets/146322015/e75d10d5-e3dc-47cf-bf66-cd57f9de264e)
+
 
 
 <p align="center">
