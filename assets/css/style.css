@@ -26,6 +26,21 @@ body {
     color: var(--white);
 }
 
+/* Barra de rolagem */
+
+body::-webkit-scrollbar {
+    width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--transparente-100);
+}
+
+body::-webkit-scrollbar-thumb {
+    background: var(--orange);
+    border-radius: 10px;
+}
+
 /* Abertura de apresentação */
 
 div#apresentacao {
@@ -104,9 +119,11 @@ section {
 
 section#inicio div#conteudo-container div#conteudo {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
     gap: 3rem;
+    min-height: 70vh;
 }
 
 section#inicio div#conteudo-container div#conteudo h3 {
@@ -143,38 +160,55 @@ section#inicio div#conteudo-container div#conteudo div#redes-sociais a i:hover {
     color: var(--white);
 }
 
-/* Sobre mim */ 
+/* Section Experiência */
 
-div#sobreMim {
-    display: flex;
-    justify-content: space-around;
-    display: flex;
-    align-items: start;
-    margin: 6rem -10rem;
+section#experiencias h4 {
+    border-left: solid 2px var(--orange);
+    color: var(--orange);
+    padding-left: 1rem;
+    font-size: 2rem;
+    margin: 0 0 4rem;
 }
 
-section#inicio div#conteudo-container div#sobreMim h4 {
+section#experiencias div#container {
     display: flex;
-    justify-content: space-around;
+    align-items: start;
+    flex-direction: column;
+    gap: 5rem;
+    margin: 6rem 0;
+}
+
+section#experiencias div#container div#sobreMim {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+section#experiencias div#container div#sobreMim img {
+    width: 200px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+}
+
+section#experiencias div#container div#sobreMim h5 {
+    font-size: 1.8rem;
     text-align: center;
     color: var(--orange);
 }
 
-section#inicio div#conteudo-container div#sobreMim p {
-    display: flex;
-    flex-direction: column;
-    width: 500px;
-    flex-wrap: wrap;
-    margin: 2rem 0;
+section#experiencias div#container div#sobreMim p {
+    width: 50ch;
 }
 
-section#inicio div#conteudo-container div#sobreMim div#cv-meusLinks {
+section#experiencias div#container div#sobreMim div#links {
     display: flex;
     justify-content: center;
-    gap: 5rem;
+    gap: 3rem;
 }
 
-section#inicio div#conteudo-container div#sobreMim div#cv-meusLinks a {
+section#experiencias div#container div#sobreMim div#links a {
     color: var(--orange);
     padding: 1rem 1.5rem;
     border: solid 2px var(--orange);
@@ -182,35 +216,12 @@ section#inicio div#conteudo-container div#sobreMim div#cv-meusLinks a {
     transition: .5s;
 }
 
-section#inicio div#conteudo-container div#sobreMim div#cv-meusLinks a:hover {
+section#experiencias div#container div#sobreMim div#links a:hover {
     border: solid 2px var(--white);
     color: var(--white);
 }
 
-/* Linguagens */ 
-
-div#linguagens div#containerLinguagens {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-
-div#linguagens div#containerLinguagens div.imgLinguagens img {
-    margin: 2rem 3rem;
-    height: 50px;
-    cursor: pointer;
-    transition: .5s;
-}
-
-div#linguagens div#containerLinguagens div.imgLinguagens img:hover {
-    transform: scale(1.5);
-}
-
 /* Section de Projetos */ 
-
-section#projetos {
-    margin: -14rem 0;
-}
 
 section#projetos h4 {
     border-left: solid 2px var(--orange);
@@ -370,10 +381,6 @@ footer span#criador a:hover {
         z-index: 1;
     }
 
-    50% {
-        opacity: 0;
-    }
-
     100% {
         min-height: 0vh;
         z-index: -1;
@@ -383,9 +390,27 @@ footer span#criador a:hover {
 
 div#apresentacao,
 div#apresentacao h1 {
-    animation: aparecer 10s ease-in-out;
+    animation: aparecer 7s ease-in-out;
     opacity: 0;
     z-index: -1;
+}
+
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        translate: -100vw 0;
+    }
+
+    to {
+        opacity: 1;
+        translate: 0 0;
+    }
+}
+
+section#inicio {
+    opacity: 1;
+    animation: appear 5s ease-in-out;
 }
 
 @keyframes palavras {
@@ -397,12 +422,12 @@ div#apresentacao h1 {
 
     21%,
     40% {
-        content: "Desenvolvedor Web";
+        content: "Programador Fullstack";
     }
 
     41%,
     60% {
-        content: "Desingner UX / UI";
+        content: "Progamador Backend";
     }
 
     61%,
@@ -412,7 +437,7 @@ div#apresentacao h1 {
 
     81%,
     100% {
-        content: "Desenvolvedor Backend";
+        content: "Programador Backend";
     }
 }
 
@@ -444,7 +469,7 @@ div#apresentacao h1 {
     65%,
     80%,
     85% {
-        width: calc(100% + 8px);
+        width: calc(100% + 10px);
     }
 }
 
@@ -452,7 +477,7 @@ section#inicio div#conteudo-container div#conteudo h4 span::before {
     content: "";
     color: var(--orange);
     animation: palavras 25s infinite;
-    animation-delay: 2.5s;
+    animation-delay: 2.8s;
     font-weight: bold;
 }
 
@@ -489,30 +514,28 @@ section#inicio div#conteudo-container div#conteudo h4 span::after {
         background-color: var(--bg-color);
     }
 
-    section#inicio div#conteudo-container div#sobreMim {
+    header nav#links {
         display: flex;
-        align-items: center;
-        flex-direction: column;
         gap: 2rem;
-        margin: 10rem 0;
-        left: -5rem;
+        margin-left: 1rem;
     }
 
-    section#inicio div#conteudo-container div#sobreMim h4 {
-        text-align: center;
-        left: -10rem;
-        padding-right: 0;
+    section#experiencias h4 {
+        border-left: solid 2px var(--orange);
+        color: var(--orange);
+        padding-left: 1rem;
+        font-size: 2rem;
+        margin: 0 0 4rem;
     }
 
-    section#inicio div#conteudo-container div#sobreMim p {
-        width: 100%;
+    /* Section Experiência */
+
+    section#experiencias div#container div#sobreMim img {
+        width: 150px;
+        border-radius: 20px;
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
     }
 
-    section#inicio div#conteudo-container div#sobreMim div#cv-meusLinks {
-        display: flex;
-        gap: 3rem;
-        padding-right: 0;
-    }
 
     /* Linguagens */ 
     

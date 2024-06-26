@@ -16,6 +16,8 @@ function instalarAplicativo(espacoDisponivel, conexaoInternet) {
 // Tamanho aproximado do aplicativo em MB
 const tamanhoDoAplicativo = 50;
 
+// Scroll
+
 // Selecionando Elementos
 const sections = document.querySelectorAll('section');
 const navLinks = document.querySelectorAll('nav#links a');
