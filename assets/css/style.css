@@ -60,7 +60,7 @@ div#apresentacao h1 {
     font-size: 2.5rem;
 }
 
-/* Header */ 
+/* Header */
 
 header {
     position: fixed;
@@ -106,16 +106,16 @@ header nav#links a.ativo {
     color: var(--orange);
 }
 
-/* Section */ 
+/* Section */
 
 section {
     min-height: 100vh;
     padding: 10.5rem 12% 10.5rem;
 }
 
-/* Section Inicio */ 
+/* Section Inicio */
 
-/* Conteudo */ 
+/* Conteudo */
 
 section#inicio div#conteudo-container div#conteudo {
     display: flex;
@@ -142,7 +142,7 @@ section#inicio div#conteudo-container div#conteudo h4 span {
     position: relative;
 }
 
-/* Redes sociais / ícones */ 
+/* Redes sociais / ícones */
 
 section#inicio div#conteudo-container div#conteudo div#redes-sociais {
     display: flex;
@@ -172,9 +172,8 @@ section#experiencias h4 {
 
 section#experiencias div#container {
     display: flex;
+    justify-content: space-between;
     align-items: start;
-    flex-direction: column;
-    gap: 5rem;
     margin: 6rem 0;
 }
 
@@ -185,6 +184,8 @@ section#experiencias div#container div#sobreMim {
     flex-direction: column;
     gap: 2rem;
 }
+
+
 
 section#experiencias div#container div#sobreMim img {
     width: 200px;
@@ -221,7 +222,49 @@ section#experiencias div#container div#sobreMim div#links a:hover {
     color: var(--white);
 }
 
-/* Section de Projetos */ 
+/* Linguagens */
+
+section#experiencias div#container div#containerLinguagens {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5rem;
+    width: 100%;
+}
+
+section#experiencias div#container div#containerLinguagens div#titulos {
+    display: flex;
+    flex-direction: column;
+    margin-left: 7rem;
+    gap: 5rem;
+    width: 100%;
+}
+
+section#experiencias div#container div#containerLinguagens div#titulos h5 {
+    font-size: 1.8rem;
+    border-bottom: solid 2px var(--orange);
+    color: var(--orange);
+    padding: 1rem;
+}
+
+section#experiencias div#container div.linguagens {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+}
+
+div.linguagens div.img img {
+    width: 80px;
+    transition: .5s;
+    cursor: pointer;
+}
+
+div.linguagens div.img p {
+    text-align: center;
+}
+
+/* Section de Projetos */
 
 section#projetos h4 {
     border-left: solid 2px var(--orange);
@@ -262,7 +305,7 @@ section#projetos div#container-projetos div.projetos p {
     flex-wrap: wrap;
 }
 
-/* Links de acesso dos projetos */ 
+/* Links de acesso dos projetos */
 
 section#projetos div#container-projetos div.projetos div#linksDeAcesso {
     display: flex;
@@ -284,7 +327,7 @@ section#projetos div#container-projetos div.projetos div#linksDeAcesso a:hover {
     color: var(--white);
 }
 
-/* Section de Contatos */ 
+/* Section de Contatos */
 
 section#contatos h4 {
     border-left: solid 2px var(--orange);
@@ -356,7 +399,7 @@ section#contatos div#container-contatos div#enviar button:hover {
     color: var(--white);
 }
 
-/* Footer */ 
+/* Footer */
 
 footer {
     text-align: center;
@@ -373,7 +416,7 @@ footer span#criador a:hover {
     color: var(--white);
 }
 
-/* Animações */ 
+/* Animações */
 
 @keyframes aparecer {
     0% {
@@ -394,7 +437,6 @@ div#apresentacao h1 {
     opacity: 0;
     z-index: -1;
 }
-
 
 @keyframes appear {
     from {
@@ -448,6 +490,7 @@ section#inicio {
 }
 
 @keyframes digitar {
+
     10%,
     15%,
     30%,
@@ -460,6 +503,7 @@ section#inicio {
     95% {
         width: 0;
     }
+
     5%,
     20%,
     25%,
@@ -492,9 +536,9 @@ section#inicio div#conteudo-container div#conteudo h4 span::after {
     width: calc(100% + 8px);
     background: var(--bg-color);
     animation-delay: 2.5s;
-}   
+}
 
-/* Responsividade */ 
+/* Responsividade */
 
 @media (width < 60rem) {
     html {
@@ -530,29 +574,55 @@ section#inicio div#conteudo-container div#conteudo h4 span::after {
 
     /* Section Experiência */
 
-    section#experiencias div#container div#sobreMim img {
-        width: 150px;
-        border-radius: 20px;
-        box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+    section#experiencias h4 {
+        border-left: solid 2px var(--orange);
+        color: var(--orange);
+        padding-left: 1rem;
+        font-size: 2rem;
+        margin: 0 0 4rem;
     }
-
-
-    /* Linguagens */ 
     
-    div#linguagens h4 {
-        margin: 3.4rem 0;
+    section#experiencias div#container {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: start;
+        margin: 6rem 0;
     }
-
-    div#linguagens div#containerLinguagens {
+    
+    section#experiencias div#container div#containerLinguagens {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        gap: 5rem;
+        width: 100%;
+        margin-top: 5rem;
+        margin-left: -5rem;
+    }
+    
+    div.linguagens {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 4rem;
     }
 
-    div#linguagens div#containerLinguagens div.imgLinguagens img {
-        margin: 2rem 3rem;
-        height: 30px;
+    div.linguagens div.img {
+        display: flex;
+        gap: 2rem;
+    }
+    
+    div.linguagens div.img img {
+        width: 80px;
+        transition: .5s;
+        cursor: pointer;
+    }
+    
+    div.linguagens div.img p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     /* Section de Projetos */ 
