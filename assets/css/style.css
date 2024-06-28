@@ -113,6 +113,20 @@ section {
     padding: 10.5rem 12% 10.5rem;
 }
 
+section.hidden {
+    opacity: 0;
+    filter: blur(15px);
+    transform: translateX(-100%);
+    transition: all 2.5s ease-in-out;
+}
+
+section.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+    transition: all 2.5s ease-in-out;
+}
+
 /* Section Inicio */
 
 /* Conteudo */
@@ -184,8 +198,6 @@ section#experiencias div#container div#sobreMim {
     flex-direction: column;
     gap: 2rem;
 }
-
-
 
 section#experiencias div#container div#sobreMim img {
     width: 200px;
@@ -564,12 +576,20 @@ section#inicio div#conteudo-container div#conteudo h4 span::after {
         margin-left: 1rem;
     }
 
-    section#experiencias h4 {
-        border-left: solid 2px var(--orange);
-        color: var(--orange);
-        padding-left: 1rem;
-        font-size: 2rem;
-        margin: 0 0 4rem;
+    /* Sections */
+
+    section.hidden {
+        opacity: 0;
+        filter: blur(15px);
+        transform: translateX(-100%);
+        transition: all 1.5s;
+    }
+    
+    section.show {
+        opacity: 1;
+        filter: blur(0);
+        transform: translateX(0);
+        transition: all 1.8s;
     }
 
     /* Section Experiência */

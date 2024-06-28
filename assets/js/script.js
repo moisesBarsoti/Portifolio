@@ -38,3 +38,21 @@ window.onscroll = () => {
         };
     })
 }
+
+// Scroll view
+
+// Selecionando elementos
+
+const sectionsHidden = document.querySelectorAll('section.hidden');
+
+const observarSection = new IntersectionObserver( (entrada) => {
+    entrada.forEach((entry) => {
+        if(entry.isIntersecting === true) {
+            entry.target.classList.add('show');
+        } else {
+            entry.target.classList.remove('show');
+        }
+    })
+});
+
+sectionsHidden.forEach((elementos) => observarSection.observe(elementos));
