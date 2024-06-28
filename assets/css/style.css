@@ -115,16 +115,14 @@ section {
 
 section.hidden {
     opacity: 0;
-    filter: blur(15px);
-    transform: translateX(-100%);
-    transition: all 2.5s ease-in-out;
+    filter: blur(5px);
+    transition: all 1.5s ease-in-out;
 }
 
 section.show {
     opacity: 1;
     filter: blur(0);
-    transform: translateX(0);
-    transition: all 2.5s ease-in-out;
+    transition: all 1.5s ease-in-out;
 }
 
 /* Section Inicio */
