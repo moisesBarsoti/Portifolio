@@ -429,12 +429,12 @@ footer span#criador a:hover {
 /* Animações */
 
 @keyframes aparecer {
-    0% {
+    from {
         opacity: 1;
         z-index: 1;
     }
 
-    100% {
+    to {
         min-height: 0vh;
         z-index: -1;
         opacity: 0;
@@ -448,6 +448,8 @@ div#apresentacao h1 {
     z-index: -1;
 }
 
+/* Animação da section inicio */
+
 @keyframes appear {
     from {
         opacity: 0;
@@ -460,9 +462,14 @@ div#apresentacao h1 {
     }
 }
 
-section#inicio {
+section#inicio,
+header {
     opacity: 1;
-    animation: appear 5s ease-in-out;
+    animation: appear 7s ease-in-out;
+}
+
+section#inicio {
+    animation: appear 8s ease-in-out;
 }
 
 @keyframes palavras {
@@ -531,7 +538,7 @@ section#inicio div#conteudo-container div#conteudo h4 span::before {
     content: "";
     color: var(--orange);
     animation: palavras 25s infinite;
-    animation-delay: 2.8s;
+    animation-delay: 7s;
     font-weight: bold;
 }
 
@@ -545,7 +552,7 @@ section#inicio div#conteudo-container div#conteudo h4 span::after {
     animation: cursor 1s infinite, digitar 25s steps(20) infinite;
     width: calc(100% + 8px);
     background: var(--bg-color);
-    animation-delay: 2.5s;
+    animation-delay: 7s;
 }
 
 /* Responsividade */
