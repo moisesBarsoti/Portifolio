@@ -688,3 +688,9 @@ section#inicio div#conteudo-container div#conteudo h4 span::after {
         margin: 3rem 9rem;
     }
 }
+
+@media (width < 28rem) {
+    html {
+        font-size: 60%;
+    }
+}
