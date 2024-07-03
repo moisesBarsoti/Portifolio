@@ -687,9 +687,19 @@ section#inicio div#conteudo-container div#conteudo h4 span::after {
         position: absolute;
         margin: 3rem 9rem;
     }
+
+    section#inicio div#conteudo-container div#conteudo h4 span::before {
+        animation-delay: 4.4s;
+    }
+    
+    section#inicio div#conteudo-container div#conteudo h4 span::after {
+        animation-delay: 4.4s;
+    }
+    
+
 }
 
-@media (width < 28rem) {
+@media (width < 25rem) {
     html {
         font-size: 60%;
     }
