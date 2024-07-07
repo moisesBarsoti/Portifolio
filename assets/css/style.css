@@ -443,7 +443,7 @@ footer span#criador a:hover {
 
 div#apresentacao,
 div#apresentacao h1 {
-    animation: aparecer 7s ease-in-out;
+    animation: aparecer 4s ease-in-out;
     opacity: 0;
     z-index: -1;
 }
@@ -695,8 +695,6 @@ section#inicio div#conteudo-container div#conteudo h4 span::after {
     section#inicio div#conteudo-container div#conteudo h4 span::after {
         animation-delay: 4.4s;
     }
-    
-
 }
 
 @media (width < 25rem) {
