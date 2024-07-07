@@ -1,8 +1,0 @@
-@media (max-width:500px) {
-    h2#heading {
-        border-left: solid 3px var(--main-color);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-}
