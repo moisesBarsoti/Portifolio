@@ -258,9 +258,18 @@ section#experiencias div#container div#containerLinguagens div#titulos h5 {
     padding: 1rem;
 }
 
+section#experiencias div#container div#containerLinguagens div#titulos div.verMais h5 {
+    font-size: 1.8rem;
+    border-bottom: solid 2px var(--orange);
+    color: var(--orange);
+    padding: 1rem;
+    width: 100%;
+}
+
 section#experiencias div#container div.linguagens {
     display: flex;
     justify-content: center;
+    align-items: start;
     gap: 4rem;
 }
 
@@ -274,7 +283,47 @@ div.linguagens div.img p {
     text-align: center;
 }
 
+/* Ver mais e Ver menos */
+
+.botaoVerMais {
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;    
+    cursor: pointer;
+    gap: .5rem;
+}
+
+.botaoVerMenos {
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;    
+    cursor: pointer;
+    gap: .5rem;
+}
+
+.verMais {
+    opacity: 0;
+}
+
+.verMenos {
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5rem;
+    width: 100%;
+}
+
+
 /* Section de Projetos */
+
+section#projetos  {
+    margin-top: -17rem;
+}
 
 section#projetos h4 {
     border-left: solid 2px var(--orange);
@@ -425,6 +474,18 @@ footer span#criador a:hover {
     border-bottom: solid 1px var(--orange);
     color: var(--white);
 }
+
+/* Footer seta para cima */
+
+footer a i{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    color: var(--orange);
+    right: 10px;
+    font-size: 2rem;
+} 
 
 /* Animações */
 

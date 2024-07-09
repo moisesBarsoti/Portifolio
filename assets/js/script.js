@@ -56,3 +56,23 @@ const observarSection = new IntersectionObserver( (entrada) => {
 });
 
 sectionsHidden.forEach((elementos) => observarSection.observe(elementos));
+
+
+// Ver mais e Ver menos
+
+const botaoVerMais = document.querySelector('.botaoVerMais');
+const botaoVerMenos = document.querySelector('.botaoVerMenos');
+const verMenos = document.querySelector('.verMais');
+
+botaoVerMais.addEventListener('click', () => {
+    verMenos.classList.toggle('verMenos');
+    botaoVerMenos.style.opacity = 1;
+    botaoVerMais.style.opacity = 0;
+});
+
+botaoVerMenos.addEventListener('click', () => {
+    verMenos.classList.toggle('verMenos');
+    botaoVerMais.style.opacity = 1;
+    botaoVerMais.style.right = 0;
+    botaoVerMenos.style.opacity = 0;
+});
